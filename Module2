@@ -1,0 +1,57 @@
+// OPERATORS //
+// Arithmetic Operator //
+
+let a = 5;
+let b = 2;
+
+console.log('a =', a, "& b = ", b);
+console.log('a - b =', a - b);          //substraction//
+console.log('a + b =', a + b);          //addition//
+console.log('a * b =', a * b);          //multiplication//
+console.log('a / b =', a / b);          //division//
+console.log('a % b =', a % b);          //Modulus//
+console.log('a ** b =', a ** b);        //exponentian//
+
+let c = 3;
+c++;
+console.log("value of c is ", c);
+console.log("value of c is ", ++c);
+console.log("value of c is ", --c);
+
+let d = 8;
+--d;
+console.log("value of d is ", d);
+
+// Assignment operator //
+let z = 5;
+console.log('z =', z +=2);
+console.log('z =', z -=2);
+console.log('z =', z *=2);
+console.log('z =', z /=2);
+console.log('z =', z %=2);
+console.log('d =', d **=2);
+
+// comparison operator //
+console.log('d == z', d == z);
+console.log('d != z', d != z);
+console.log('c > z', c > z);
+console.log('Value for C & z is ', c, "&", z);
+
+// Logical operators - and, or, not //
+console.log("cond1 & cond2 is ", c > z && d != z);
+// ques - How to check if a customer is eligible for redeeming offers using an OR condition (e.g. Zomato Gold or coupon code)?
+let hasZomatoGold = true;
+let hasCouponCode = false;
+
+if (hasZomatoGold || hasCouponCode) {
+  console.log("Customer is eligible for redeeming offers.");
+} else {
+  console.log("Customer is not eligible.");
+}
+
+console.log("!(c > z) = ", !(c > z));
+
+// ternary operator //
+let age = 25;
+let result = age >= 18 ? "Adult" : "Not Adult"
+console.log(result);
