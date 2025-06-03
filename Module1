@@ -1,0 +1,65 @@
+// Basics - VARIABLE, DATA TYPE //
+
+// variable - case sensetive
+// Allowed Naming: camelCase, Only letter & digits, Starting with $, _ is allowed.
+// Namings convention not recommended: _ / - / special characters / space in between, Reserve words not allowed, starting digits not allowed.
+
+var userName = "Mrinalini"
+console.log("type of a: ", typeof userName);
+console.log(`The name of the user is ${userName}`);
+
+isfollow = true
+console.log("type of isfollow is ", typeof(isfollow));
+
+// working with variable and operators - Ques: create 2 variable a and b  that should store the values 5 and 3. Also add 3rd variable that stores sum of a and b
+let a = 5;
+let b = 3;
+let sum = a + b;
+console.log("sum:", sum);
+console.log(`Data Type of ${sum} is ${typeof(sum)}`);
+
+// Template literals :
+console.log(`The sum of ${a} and ${b} is ${sum}.`);
+
+let object = {
+    item  : "pen",
+    price : 10,
+};
+console.log(`the cost of ${object.item} is ${object.price}`);
+
+// Ques: create 2 variables one that holds user input (number) and one that holds no value initially (result). set the result variable to 18 plus the value stored in user Input. Add 3 additional line of code where you change the result variable again by substracting a value of you choice, multiplying and diividing it. Think about the value stored in the user input variale you created - did that value change. Alert the result and the userinput variable in two separate alert cells.
+let userInput = 10;
+let result;
+result = 18 + userInput;
+result = result - 4;
+result = result * 2;
+result = result / 2;
+// alert("result: ", result);           //alert statements are meant for browsers
+// alert("User Input: ", userInput);
+console.log("result: ", result);
+console.log("User Input: ", userInput); 
+
+// string in built functions or methods //
+str = '  Madhurima Chatterjee '
+console.log('length of string is ', str.length);
+console.log('letter in 8th position is ', str[8]);
+
+str1 = str.toUpperCase();
+console.log('Upper case -', str1);
+
+str2 = str.toLowerCase();
+console.log('Lower case -', str2);
+
+str3 = str.trim();
+console.log('Trim case -', str3);
+
+str4 = str.slice(0,7);
+console.log('Sliced String -', str4);
+
+str5 = str4.concat(str);
+console.log('Concatenated Text -', str5);
+
+// Generate user's full name. Start username with @ followed by their full name and ending with the fullname length.
+let nameOfUser = "Isha Jaiswal";
+let userId = "@" + nameOfUser + nameOfUser.length;
+console.log("user name is:", userId);
