@@ -1,0 +1,82 @@
+// CONTROL STRUCTURES //
+
+// Selection Structures //
+// How to check if a person is eligible to vote (age 18 or older)? - IF //
+let age = 18;
+if (age >= 18) {
+    console.log("Your are elligible to vote.");
+}
+if (age < 18) {
+    console.log("You are not elligible to vote.");
+}
+
+// How to check if a number is even or odd? - ELSE //
+let number = 19;
+if (number % 2 === 0) {
+    console.log("Number is even.");
+} else {
+    console.log("Number is odd.");
+}
+
+// How to check if a student got a grade A, B, or C based on marks? - ELSE IF //
+let marks = 70;
+if (marks >= 90) {
+    console.log("Grade A");
+} else if (marks >= 75) {
+    console.log("Grade B");
+} else if (marks >= 50) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+
+// Iterative Structures //
+// Calculate sum of 1 to 5 - FOR LOOP //
+let sum = 0
+for (let i = 1; i <= 5; i++) {
+    sum = sum + i;
+}
+console.log('sum of 1 to 5 = ', sum);
+console.log("loop has ended.");
+
+// calculate sum of 1 to 100 //
+let a = 0;
+let n = 100;
+for (let i = 1; i <= n; i++) {
+    a = a + i;
+}
+console.log("sum of 1 to 100 is: ", a);
+console.log("loop has ended");
+
+// Modify your program to print only even numbers from 1 to 20. - WHILE LOOP//
+let num = 1;
+while (num <= 20) {
+    if(num % 2 ===0) {
+        console.log(num);
+    }
+    num++;
+}
+
+// for - of - loop //
+let str = "My Console";
+for (let i of str) {
+    console.log("i", i);
+}
+
+let size = 0
+for (let i of str) {
+    console.log("i", i);
+    size++
+}
+console.log("string size is ", size);
+
+// for-in- loop //
+let student = {
+    fullname : "Rahul Kumar",
+    age      : 20,
+    cgpa     : 7.5,
+    ispass   : true,
+};
+for (let key in student) {
+    console.log("key = ", key, "Value = ", student[key]);
+}
